@@ -40,3 +40,31 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  text-decoration: none;
+  outline: 1px solid currentColor;
+}
+
+button:focus-visible {
+  border-block-end: 1px solid currentColor;
+}
+
+a:hover {
+  cursor: pointer;
+  border-block-end: 1px solid currentColor;
+}
+
+button:hover {
+  cursor: pointer;
+  outline: 1px solid var(--hover-border-color, #ff007040);
+}
+
+button:disabled {
+  pointer-events: none;
+}
